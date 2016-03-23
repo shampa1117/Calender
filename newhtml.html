@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function processData(f1,f2,f3,f4,f5,f6){
+	var v1 = document.getElementById(f1).value;
+	var v2 = document.getElementById(f2).value;
+	var v3 = document.getElementById(f3).value;
+	var v4 = document.getElementById(f4).value;
+	var v5 = document.getElementById(f5).value;
+	var v6 = document.getElementById(f6).value;
+	alert(v1+"\n"+v2+"\n"+v3+"\n"+v4+"\n"+v5+"\n"+v6);
+	// Use Ajax-PHP to send the values to server storage
+	// Ajax-PHP Video Tutorial - www.developphp.com/view.php?tid=1185
+}
+</script>
+</head>
+<body>
+<h2>HTML5 + Javascript Date Time Form Input Types Tutorial</h2>
+Date: <input type="date" name="field1" id="field1" /><br /><br />
+Datetime local: <input type="datetime-local" name="field2" id="field2" /><br /><br />
+Datetime: <input type="datetime" name="field3" id="field3" /><br /><br />
+Month: <input type="month" name="field4" id="field4" /><br /><br />
+Time: <input type="time" name="field5" id="field5" /><br /><br />
+Week: <input type="week" name="field6" id="field6" /><br /><br />
+<input type="button" onClick="processData('field1','field2','field3','field4','field5','field6')" value="Submit" />
+</body>
+</html>
